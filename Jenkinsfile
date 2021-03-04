@@ -4,8 +4,7 @@ pipeline {
     stages {
         stage('Verify Branch') {
             steps {
-                ${ENV, var="$GIT_BRANCH"}
-                echo ${var}
+                echo ${GIT_BRANCH}
             }
         }
     }
