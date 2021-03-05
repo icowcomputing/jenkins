@@ -9,10 +9,10 @@ pipeline {
         }
         stage('Docker Build') {
             steps {
-                sh 'sudo docker images -a'
+                sh 'docker images -a'
                 sh 'cd /home/frankie/dev'
-                sh 'sudo docker build -t jenkinsapp01 .'
-                sh 'sudo docker images -a'
+                sh 'docker build -t jenkinsapp01 .'
+                sh 'docker images -a'
             }
         }
         
